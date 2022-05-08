@@ -2,6 +2,38 @@
 
 ## 🚩 Challenge 5: Minimum Viable Exchange
 
+
+### Uniswap V2 Technical Overivew
+
+Constant Product Formula : `x * y = k`. k is also known as the invariant
+
+#### Price Curve
+How does the price curve of Uniswap V2 Work:
+
+![image](https://user-images.githubusercontent.com/46377366/167290251-1e28640a-f0d2-4ca0-824a-928b431689e4.png)
+
+
+### Swaps
+
+
+### Pools
+![image](https://user-images.githubusercontent.com/46377366/167290362-94c01579-55ed-4959-8bbf-57fb28c5a63d.png)
+
+Initial Funding of pool : When a pool contract is created, its balances of each token are 0; in order for the pool to begin facilitating trades, someone must seed it with an initial deposit of each token. 
+
+Providing Liquidity in Contracts : 
+- router contract : `addLiquidity` or `addLiquidityEth` if WETH is involved.
+
+parameters :
+- amount*Desired -> reflect current pridce
+- amount*Min -> encode the caller's tolerance to price changess. 
+
+Limit treshold to percentages of calculated desired price
+
+e.g At 1% tolerance level, if our user sends a transaction with 1 ETH and 200 DAI, amountETHMin should be set to e.g. .99 ETH, and amountTokenMin should be set to 198 DAI. This means that, at worst, liquidity will be added at a rate between 198 DAI/1 ETH and 202.02 DAI/1 ETH (200 DAI/.99 ETH).
+
+
+==================================================================================================
 This challenge will provide a tutorial to help you build/understand a simple decentralized exchange, with one token-pair (ERC20 BALLOONS ($BAL) and ETH). This readme is an upated version of the [original tutorial](https://medium.com/@austin_48503/%EF%B8%8F-minimum-viable-exchange-d84f30bd0c90). Please read the intro for a background on what we are building! There is also a Youtube video that may help you understand the concepts covered within this challenge too: https://www.youtube.com/watch?v=eP5w6Ger1EQ&t=364s&ab_channel=SimplyExplained.
 
 This branch was heavily based off of this branch: https://github.com/scaffold-eth/scaffold-eth-challenges/tree/challenge-5-dex.
