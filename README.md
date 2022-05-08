@@ -1,20 +1,16 @@
-# 🏗 scaffold-eth | 🏰 BuidlGuidl
-
-## 🚩 Challenge 5: Minimum Viable Exchange
+# Minimum Viable Exchange
 
 
-### Uniswap V2 Technical Overivew
+## Uniswap V2 Technical Overivew
 
 Constant Product Formula : `x * y = k`. k is also known as the invariant
+
+### Swaps
 
 #### Price Curve
 How does the price curve of Uniswap V2 Work:
 
 ![image](https://user-images.githubusercontent.com/46377366/167290251-1e28640a-f0d2-4ca0-824a-928b431689e4.png)
-
-
-### Swaps
-
 
 ### Pools
 ![image](https://user-images.githubusercontent.com/46377366/167290362-94c01579-55ed-4959-8bbf-57fb28c5a63d.png)
@@ -24,7 +20,8 @@ Initial Funding of pool : When a pool contract is created, its balances of each 
 Providing Liquidity in Contracts : 
 - router contract : `addLiquidity` or `addLiquidityEth` if WETH is involved.
 
-parameters :
+[parameters :
+](https://docs.uniswap.org/protocol/V2/reference/smart-contracts/router-02)
 - amount*Desired -> reflect current pridce
 - amount*Min -> encode the caller's tolerance to price changess. 
 
