@@ -30,8 +30,7 @@ Limit treshold to percentages of calculated desired price
 e.g At 1% tolerance level, if our user sends a transaction with 1 ETH and 200 DAI, amountETHMin should be set to e.g. .99 ETH, and amountTokenMin should be set to 198 DAI. This means that, at worst, liquidity will be added at a rate between 198 DAI/1 ETH and 202.02 DAI/1 ETH (200 DAI/.99 ETH).
 
 
-===========================================================================================
-
+==============================================================
 
 This challenge will provide a tutorial to help you build/understand a simple decentralized exchange, with one token-pair (ERC20 BALLOONS ($BAL) and ETH). This readme is an upated version of the [original tutorial](https://medium.com/@austin_48503/%EF%B8%8F-minimum-viable-exchange-d84f30bd0c90). Please read the intro for a background on what we are building! There is also a Youtube video that may help you understand the concepts covered within this challenge too: https://www.youtube.com/watch?v=eP5w6Ger1EQ&t=364s&ab_channel=SimplyExplained.
 
@@ -41,16 +40,12 @@ This branch was heavily based off of this branch: https://github.com/scaffold-et
 
 ### Checkpoint 0: 📦 install 📚
 
-_TODO: Update this with appropriate links_
 
 ```bash
-git clone https://github.com/scaffold-eth/scaffold-eth-challenges.git challenge-5-dex
-cd challenge-5-dex
-git checkout challenge-5-dex
+git clone 
 yarn install
 ```
 
-### Checkpoint 1: 🔭 Environment 📺
 
 You'll have three terminals up for:
 
